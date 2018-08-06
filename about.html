@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="about.css"/>
+	<title>About</title>
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html" class="topLink">home</a>
+	  <a href="about.html">about</a>
+	  <a href="projects.html">projects</a>
+	  <a href="contact">contact</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="close">&times;</span>
+	    <div class="gridContainer">
+		    <img src="justin.jpg" class="picture">
+		    <img src="jenn.jpg" class="picture">
+		    <img src="philip.jpg" class="picture">
+		    <div>Justin Jeong</div>
+		  	<div>Jennifer Um</div>
+		  	<div>Philip Jung</div>
+		  	<div>Co-Founder/Videographer</div>
+		  	<div>Co-Founder/Videographer</div>
+		  	<div>Web Designer</div>
+		  </div>
+		  <!-- <div class="bibleVerse">So, whether you eat or drink, or whatever you do, do all to the glory of God. (1 Corinthians 10:31)</div> -->
+	  </div>
+
+	</div>
+
+	<div id="mainContainer">
+		<div class="container">
+			<img src="logo.png" id="logo">
+			<span onclick="openNav()"><img src="sidebar.svg" class="sidebar"></span>
+		</div>
+		<div id="description">
+			<p>We are a...</p>
+			<p>multimedia group based in New York. We specialize in creating audiovisual projects for musicians and artists in need of a platform to showcase their talents.</p>
+			<p>You give us your vision, and we help tell the story.</p>
+			<hr/>
+			<button id="aboutButton">meet the team.</button>
+		</div>
+		<div class="copyright">© Worship One Name</div>
+	</div>
+	<script>
+		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "350px";
+		    document.getElementById("mainContainer").style.opacity = "0.2";
+		    document.body.style.backgroundColor = "rgba(0,0,0,0.3)"
+		    document.getElementById("aboutButton").style.backgroundColor = "rgba(0,0,0,0.1)";
+			}
+
+			/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+			function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("mainContainer").style.opacity = "1";
+		    document.body.style.backgroundColor = "white"
+		    document.getElementById("aboutButton").style.backgroundColor = "white";
+			}
+
+			// Get the modal
+			var modal = document.getElementById('myModal');
+
+			// Get the button that opens the modal
+			var btn = document.getElementById("aboutButton");
+
+			// Get the <span> element that closes the modal
+			var span = document.getElementsByClassName("close")[0];
+
+			// When the user clicks the button, open the modal 
+			btn.onclick = function() {
+		    modal.style.display = "block";
+			}
+
+			// When the user clicks on <span> (x), close the modal
+			span.onclick = function() {
+		    modal.style.display = "none";
+			}
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+		    if (event.target == modal) {
+	        modal.style.display = "none";
+		    }
+			}
+	</script>
+</body>
+</html>

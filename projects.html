@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="projects.css"/>
+	<title>About</title>
+	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+</head>
+<body>
+	<div id="mySidenav" class="sidenav">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <a href="index.html" class="topLink">home</a>
+	  <a href="about.html">about</a>
+	  <a href="projects">projects</a>
+	  <a href="contact">contact</a>
+	</div>
+
+	<!-- Use any element to open the sidenav -->
+
+	<div id="mainContainer">
+		<div class="container">
+			<img src="logo.png" id="logo">
+			<span onclick="openNav()"><img src="sidebar.svg" class="sidebar"></span>
+		</div>
+		<div id="description">
+			<div>Projects</div>
+			<hr id="topLine"/>
+			<div id="projectContainer">
+				<div>
+					<div class="projectTitle">Koku Ramen</div>
+					<iframe width="270" height="150" src="https://www.youtube.com/embed/Losm3k9Xd_w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen style="margin-bottom: 15px"></iframe>
+					<iframe width="270" height="150" src="https://www.youtube.com/embed/C5K39XpJvWk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div>
+					Koku Ramen is amazing. OMG if you haven't tried you haven't lived yet. You can't call yourself a New Yorker until you've tried eating at this place. Check out our collab with Koku Ramen and see you there!
+				</div>
+			</div>
+			<hr/>
+			<div id="projectContainer">
+				<div>
+					<div class="projectTitle">Spot Dessert Bar</div>
+					<iframe width="270" height="150" src="https://www.youtube.com/embed/9Dhmco-p6PQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</div>
+				<div>
+					Spot Dessert Bar is amazing. OMG if you haven't tried you haven't lived yet. You can't call yourself a New Yorker until you've tried eating at this place. Check out our collab with Spot Dessert Bar and see you there!
+				</div>
+			</div>
+			<hr/>
+		</div>
+		<div class="copyright">© Worship One Name</div>
+	</div>
+	<script>
+		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "350px";
+		    document.getElementById("mainContainer").style.opacity = "0.2";
+		    document.body.style.backgroundColor = "rgba(0,0,0,0.3)"
+		    document.getElementById("aboutButton").style.backgroundColor = "rgba(0,0,0,0.1)";
+			}
+
+			/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+			function closeNav() {
+		    document.getElementById("mySidenav").style.width = "0";
+		    document.getElementById("mainContainer").style.opacity = "1";
+		    document.body.style.backgroundColor = "white"
+		    document.getElementById("aboutButton").style.backgroundColor = "white";
+			}
+	</script>
+</body>
+</html>
