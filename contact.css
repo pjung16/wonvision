@@ -87,32 +87,35 @@ body {
 
 #description {
   display: block;
-  width: 40%;
+  width: 35%;
   margin: 0 auto;
-  padding: 80px;
-  line-height: 1.5;
+  padding: 40px;
   font-size: 18px;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1.4px solid #000;
-  margin: 1.7em 0;
-  padding: 0;
-}
-
-#aboutButton {
+input, textarea {
   border: 1px solid #000;
-  font-size: 18px;
   font-family: 'Karla', Avenir;
-  padding: 3px 4px; 
-  transition: 0.3s;
-  cursor: pointer;
+  padding: 3px 10px;
+  font-size: 18px;
+  margin-top: 15px;
 }
 
-#aboutButton:hover {
+textarea {
+  height: 180px;
+}
+
+input[type=text], textarea {
+  padding: 10px;
+  width: 100%;
+}
+
+input[type=submit] {
+  margin-top: -10px;
+  transition: 0.3s;
+}
+
+input[type=submit]:hover {
   background-color: black !important; 
   color: white;
 }
@@ -125,58 +128,4 @@ hr {
   display: block;
   font-size: 12px;
   color: #808080;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 80px; /* Location of the box */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-  background-color: #fefefe;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-/* The Close Button */
-.close {
-  color: #111;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-  transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-  color: #818181;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.gridContainer {
-  margin-top: 30px;
-  margin-left: 20px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-items: center;
-}
-
-.picture {
-  width: 80%;
-  height: auto;
-  margin: 20px;
 }

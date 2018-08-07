@@ -1,26 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link type="text/css" rel="stylesheet" href="index.css"/>
-	<title>Home</title>
+	<link type="text/css" rel="stylesheet" href="contact.css"/>
+	<title>Contact Us</title>
 	<link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
 </head>
 <body>
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="" class="topLink">home</a>
+	  <a href="index.html" class="topLink">home</a>
 	  <a href="about.html">about</a>
 	  <a href="projects.html">projects</a>
 	  <a href="contact.html">contact</a>
 	</div>
 
 	<!-- Use any element to open the sidenav -->
+
 	<div id="mainContainer">
 		<div class="container">
 			<img src="logo.png" id="logo">
 			<span onclick="openNav()"><img src="sidebar.svg" class="sidebar"></span>
 		</div>
-		<img src="chance1.jpg" class="photo">
+		<div id="description">
+			<div>Contact Us!</div>
+			<form>
+			  <input type="text" name="name" placeholder="Name">
+			  <br>
+			  <input type="text" name="email" placeholder="Email Address">
+			  <br>
+			  <textarea placeholder="Message"></textarea>
+			  <br><br>
+			  <input type="submit" value="Submit">
+			</form>
+		</div>
+		<div class="copyright">© Worship One Name</div>
 	</div>
 	<script>
 		/* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
@@ -28,6 +41,7 @@
 			  document.getElementById("mySidenav").style.width = "350px";
 		    document.getElementById("mainContainer").style.opacity = "0.2";
 		    document.body.style.backgroundColor = "rgba(0,0,0,0.3)"
+		    document.getElementById("aboutButton").style.backgroundColor = "rgba(0,0,0,0.1)";
 			}
 
 			/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
@@ -35,6 +49,7 @@
 		    document.getElementById("mySidenav").style.width = "0";
 		    document.getElementById("mainContainer").style.opacity = "1";
 		    document.body.style.backgroundColor = "white"
+		    document.getElementById("aboutButton").style.backgroundColor = "white";
 			}
 	</script>
 </body>
