@@ -8,16 +8,18 @@
 <body>
 	<div id="mySidenav" class="sidenav">
 	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-	  <a href="" class="topLink">home</a>
-	  <a href="about.html">about</a>
-	  <a href="projects.html">projects</a>
-	  <a href="contact.html">contact</a>
+	  <div class="links">
+		  <a href="index.html">home</a>
+		  <a href="about.html">about</a>
+		  <a href="projects.html">projects</a>
+		  <a href="contact.html">contact</a>
+		</div>
 	</div>
 
 	<!-- Use any element to open the sidenav -->
 	<div id="mainContainer">
 		<div class="container">
-			<img src="logo.png" id="logo">
+			<a href="index.html"><img src="logo.png" id="logo"><a>
 			<span onclick="openNav()"><img src="sidebar.svg" class="sidebar"></span>
 		</div>
 		<img src="chance1.jpg" class="photo">
