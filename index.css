@@ -4,6 +4,7 @@ html {
 
 body {
   transition: 0.3s;
+  background-color: #CCCCFF;
 }
 
 .container {
@@ -29,10 +30,10 @@ body {
   margin-right: 10px;
 }
 
-.photo {
-	margin: 0 auto;
-	margin-bottom: -10px;
-  display: block;
+.landingText {
+	position: absolute;
+  right: 200px;
+  bottom: 300px;
 }
 
 #logo {
