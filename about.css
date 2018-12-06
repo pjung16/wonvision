@@ -130,7 +130,7 @@ hr {
 
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
+  display: block; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
   padding-top: 80px; /* Location of the box */
@@ -141,6 +141,9 @@ hr {
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 /* Modal Content */
